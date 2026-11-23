@@ -7,11 +7,9 @@
 A dead zone is where the signal does not reach. Our desktops were one: the phone in one hand, Linux on the screen, and
 nothing between them. So we started filling it.
 
-| | |
-|---|---|
-| **[Pairlume](https://github.com/deadzone-studio/pairlume)** | Your Android phone and your Hyprland desktop as one: texts, calls and their voice on the computer, paired by a shake. [Download](https://github.com/deadzone-studio/pairlume/releases) |
-| **[ricepick](https://github.com/deadzone-studio/ricepick)** | A catalog of Hyprland rices you can browse, preview and download. It never runs anything a rice ships. ([the catalog](https://github.com/deadzone-studio/ricepick-db)) |
-| **[CS Simulator](https://github.com/deadzone-studio/CSSimulator)** | Open CS cases, upgrade skins and do daily missions, all with pretend money, in a browser. |
+- **[Pairlume](https://github.com/deadzone-studio/pairlume)**: your Android phone and your Hyprland desktop as one: texts, calls and their voice on the computer, paired by a shake. [Download](https://github.com/deadzone-studio/pairlume/releases)
+- **[ricepick](https://github.com/deadzone-studio/ricepick)**: a catalog of Hyprland rices you can browse, preview and download. It never runs anything a rice ships. ([the catalog](https://github.com/deadzone-studio/ricepick-db))
+- **[CS Simulator](https://github.com/deadzone-studio/CSSimulator)**: open CS cases, upgrade skins and do daily missions, all with pretend money, in a browser.
 
 ![Pairlume: texts as a window, a panel and bubbles](pairlume.png)
 
