@@ -4,7 +4,7 @@ import html
 import math
 from pathlib import Path
 
-W, H = 900, 520
+W, H = 900, 560
 MONO = "'JetBrains Mono','Cascadia Code','SF Mono',Consolas,'DejaVu Sans Mono',monospace"
 SANS = "'Inter','Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
 
@@ -19,10 +19,11 @@ TERM = [  # (command, answer)
 ]
 CARD = ("Pairlume", "stage 3: calls", ["Your phone and your Hyprland", "desktop as one: texts, calls", "and their voice."])
 STACK = [  # (what, made with)
-    ("Desktop", ["Rust", "QML", "Python"]),
+    ("Desktop", ["Rust", "QML", "Python", "GTK"]),
     ("Phone", ["Kotlin"]),
     ("Web", ["HTML", "CSS", "JavaScript"]),
-    ("Made on", ["Linux", "Hyprland", "Git"]),
+    ("Tools", ["Bash", "Docker", "Git"]),
+    ("Made on", ["Linux", "Hyprland"]),
 ]
 e = html.escape
 
@@ -30,6 +31,8 @@ e = html.escape
 ICONS = {
     "HTML": ("html5", "E34F26"), "CSS": ("css", "1572B6"), "JavaScript": ("javascript", "F7DF1E"), "QML": ("qt", "41CD52"),
     "Python": ("python", "3776AB"), "Node.js": ("nodedotjs", "5FA04E"), "Rust": ("rust", "000000"), "Kotlin": ("kotlin", "7F52FF"),
+    "TypeScript": ("typescript", "3178C6"), "React": ("react", "61DAFB"), "C++": ("cplusplus", "00599C"), "C#": ("csharp", "512BD4"),
+    "Java": ("java", "ED8B00"), "Lua": ("lua", "2C2D72"), "GTK": ("gtk", "7FE719"),
     "Linux": ("linux", "FCC624"), "Hyprland": ("hyprland", "58E1FF"), "Bash": ("gnubash", "4EAA25"), "Docker": ("docker", "2496ED"), "Git": ("git", "F05032"),
 }
 
@@ -109,8 +112,8 @@ def build(c):
     s = sans(34, 370, name, c["txt"], 19, 700)
     for j, l in enumerate(lines):
         s += sans(34, 402 + j * 23, l, c["dim"], 14)
-    s += f'<circle cx="39" cy="483" r="5" fill="{c["acc"]}"/>' + sans(52, 488, lang, c["txt"], 13, 500)
-    o.append(tile(12, 334, 284, 174, c, 0.5, s))
+    s += f'<circle cx="39" cy="523" r="5" fill="{c["acc"]}"/>' + sans(52, 528, lang, c["txt"], 13, 500)
+    o.append(tile(12, 334, 284, 214, c, 0.5, s))
     # ---- czego uzywam ----
     s, i = "", 0
     for r, (cat, items) in enumerate(STACK):
@@ -119,12 +122,12 @@ def build(c):
         x = 420
         for k in items:
             logo = k in ICONS
-            w = len(k) * 7.4 + 24 + (20 if logo else 0)
+            w = len(k) * 7.0 + 20 + (18 if logo else 0)
             s += (f'<g class="pop" style="animation-delay:{1.0 + i * .08:.2f}s"><rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="30" rx="15" fill="{c["chip"]}"/>'
-                  f'{icon(k, round(x + 11, 1), y + 8, 14, c["chip"], c["txt"])}{sans(round(x + w / 2 + (10 if logo else 0), 1), y + 20, k, c["txt"], 13, 500, "middle")}</g>')
+                  f'{icon(k, round(x + 10, 1), y + 8.5, 13, c["chip"], c["txt"])}{sans(round(x + w / 2 + (9 if logo else 0), 1), y + 20, k, c["txt"], 12.5, 500, "middle")}</g>')
             x += w + 8
             i += 1
-    o.append(tile(308, 334, 580, 174, c, 0.65, s))
+    o.append(tile(308, 334, 580, 214, c, 0.65, s))
     css = """
 .tile{opacity:0;transform-box:fill-box;transform-origin:center;animation:tile .6s cubic-bezier(.2,.9,.25,1.08) forwards}
 @keyframes tile{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
