@@ -19,7 +19,7 @@ TERM = [  # (command, answer)
 ]
 CARD = ("Pairlume", "stage 3: calls", ["Your phone and your Hyprland", "desktop as one: texts, calls", "and their voice."])
 STACK = [  # (what, made with)
-    ("Desktop", ["Rust", "QML", "Python", "GTK"]),
+    ("Desktop", ["Rust", "QML", "Python", "GTK 4"]),
     ("Phone", ["Kotlin"]),
     ("Web", ["HTML", "CSS", "JavaScript"]),
     ("Tools", ["Bash", "Docker", "Git"]),
@@ -32,7 +32,7 @@ ICONS = {
     "HTML": ("html5", "E34F26"), "CSS": ("css", "1572B6"), "JavaScript": ("javascript", "F7DF1E"), "QML": ("qt", "41CD52"),
     "Python": ("python", "3776AB"), "Node.js": ("nodedotjs", "5FA04E"), "Rust": ("rust", "000000"), "Kotlin": ("kotlin", "7F52FF"),
     "TypeScript": ("typescript", "3178C6"), "React": ("react", "61DAFB"), "C++": ("cplusplus", "00599C"), "C#": ("csharp", "512BD4"),
-    "Java": ("java", "ED8B00"), "Lua": ("lua", "2C2D72"), "GTK": ("gtk", "7FE719"),
+    "Java": ("java", "ED8B00"), "Lua": ("lua", "2C2D72"), "GTK 3": ("gtk", "7FE719"), "GTK 4": ("gtk", "7FE719"),
     "Linux": ("linux", "FCC624"), "Hyprland": ("hyprland", "58E1FF"), "Bash": ("gnubash", "4EAA25"), "Docker": ("docker", "2496ED"), "Git": ("git", "F05032"),
 }
 
