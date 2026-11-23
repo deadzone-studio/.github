@@ -1,8 +1,11 @@
-<p align="center"><img src="https://raw.githubusercontent.com/deadzone-studio/website/main/strona/img/mark.svg" width="72" alt=""></p>
+<div align="center">
 
-<h3 align="center">Deadzone Studio</h3>
-<p align="center">Open-source tools for Linux desktops and Android phones, made in Poland.<br>
-<a href="https://deadzone.m4rtwy-home.pl">deadzone.m4rtwy-home.pl</a></p>
+![Deadzone Studio: open source for Linux and Android](assets/studio-dark.svg#gh-dark-mode-only)
+![Deadzone Studio: open source for Linux and Android](assets/studio-light.svg#gh-light-mode-only)
+
+[deadzone.m4rtwy-home.pl](https://deadzone.m4rtwy-home.pl)
+
+</div>
 
 A dead zone is where the signal does not reach. Our desktops were one: the phone in one hand, Linux on the screen, and
 nothing between them. So we started filling it.
